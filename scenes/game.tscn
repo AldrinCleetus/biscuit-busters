@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bs8xv7rbmpcbb"]
 
 [ext_resource type="Texture2D" uid="uid://c42flkc1n2aq4" path="res://assets/floor.png" id="1_uwrxv"]
-[ext_resource type="PackedScene" uid="uid://dch4ob0nrxubh" path="res://Characters/player_one.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://dch4ob0nrxubh" path="res://scenes/characters/player_one.tscn" id="2_yqjtg"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yqjtg"]
 
@@ -9,7 +9,7 @@
 
 [node name="floor" type="Sprite2D" parent="."]
 material = SubResource("CanvasItemMaterial_yqjtg")
-scale = Vector2(1.00298, 1.63636)
+scale = Vector2(18.235, 40)
 texture = ExtResource("1_uwrxv")
 
 [node name="PlayerOne" parent="." instance=ExtResource("2_yqjtg")]
@@ -21,3 +21,7 @@ position = Vector2(-89.7323, -23)
 zoom = Vector2(3.01, 3.01)
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
+
+[node name="Wall" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall"]

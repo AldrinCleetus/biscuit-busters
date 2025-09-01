@@ -11,6 +11,7 @@ func _physics_process(_delta: float) -> void:
    	 Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
 
+
 	direction = direction.normalized()
 
 	velocity = direction * SPEED
